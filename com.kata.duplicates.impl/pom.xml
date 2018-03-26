@@ -1,0 +1,33 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>com.kata.duplicates.impl</artifactId>
+
+	<parent>
+		<groupId>com.kata.duplicates</groupId>
+		<artifactId>maven.parent</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+		<relativePath>../maven.parent</relativePath>
+	</parent>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.kata.duplicates</groupId>
+			<artifactId>com.kata.duplicates.api</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.5</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/commons-codec/commons-codec -->
+		<dependency>
+			<groupId>commons-codec</groupId>
+			<artifactId>commons-codec</artifactId>
+			<version>1.4</version>
+		</dependency>
+	</dependencies>
+</project>
