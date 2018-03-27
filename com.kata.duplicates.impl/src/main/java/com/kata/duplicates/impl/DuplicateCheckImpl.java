@@ -14,7 +14,7 @@ public class DuplicateCheckImpl implements DuplicateCheck{
 
 	@Override
 	public Collection<Duplicate> collectCandidates(String path) {
-		return null;
+		return collectCandidates(path, EModi.SICE_AND_NAME);
 	}	
 
 	@Override
