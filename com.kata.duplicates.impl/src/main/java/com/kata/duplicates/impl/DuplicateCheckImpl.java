@@ -25,7 +25,7 @@ public class DuplicateCheckImpl implements DuplicateCheck{
 				.map(file -> new DuplicateImpl(file, FileUtils.sizeOf(file)))
 				.collect(Collectors.toList());
 		
-		FileCompareStrategy strategy = CompareFileStrategyFactory.create(modi, possibleDuplicates);
+		FileCompareStrategy strategy = StrategyFactory.create(modi, possibleDuplicates);
 		
 		return possibleDuplicates.parallelStream()
 				.filter(strategy::isDuplicate)

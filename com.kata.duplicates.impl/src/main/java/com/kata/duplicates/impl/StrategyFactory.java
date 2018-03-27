@@ -5,7 +5,7 @@ import java.util.Collection;
 import com.kata.duplicates.api.Duplicate;
 import com.kata.duplicates.api.EModi;
 
-public final class CompareFileStrategyFactory {
+public final class StrategyFactory {
 
 	public static FileCompareStrategy create(EModi modi, Collection<Duplicate> files){
 			
@@ -19,6 +19,6 @@ public final class CompareFileStrategyFactory {
 		}
 	}
 	
-	private CompareFileStrategyFactory(){
+	private StrategyFactory(){
 	}
 }
